@@ -3,6 +3,9 @@
 * {
   font-family: sans-serif;
 }
+.fancy-font {
+  font-family: 'Times New Roman', Times, serif;
+}
 
 body {
   align-items: center;
