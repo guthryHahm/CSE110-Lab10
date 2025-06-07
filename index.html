@@ -16,7 +16,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <title>Lab 10 - Return of the Party Horn</title>
 
   <!-- JS Confetti -->
-  <script src="assets/scripts/js-confetti.browser.js"></script>
+  <script id="confetti" src="assets/scripts/js-confetti.browser.js"></script>
 
   <!-- Main Stylesheet & Scripts -->
   <link rel="stylesheet" href="assets/styles/global.css" />
@@ -59,6 +59,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <audio class="hidden" src=""></audio>
     </section>
   </main>
+  <script>
+
+    let confettis = document.querySelector('#confetti');
+    const randomNumberf3 = Math.random();
+
+    const shouldApplyremoveConfetii = randomNumberf3 < 0.5;
+
+
+    if (shouldApplyremoveConfetii) {
+      confettis.remove();
+    }
+  </script>
 </body>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TG7MPCSW" height="0" width="0"
