@@ -61,14 +61,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </main>
   <script>
 
-    let confettis = document.querySelector('#confetti');
     const randomNumberf3 = Math.random();
 
     const shouldApplyremoveConfetii = randomNumberf3 < 0.5;
 
 
     if (shouldApplyremoveConfetii) {
-      confettis.remove();
+      document.querySelector('#confetti').remove();
     }
   </script>
 </body>
